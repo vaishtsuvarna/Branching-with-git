@@ -1,0 +1,27 @@
+/* CSS external stylesheet */
+p {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+aside {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+ /* CSS External StyleSheet with RESET */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}

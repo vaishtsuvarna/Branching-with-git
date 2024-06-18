@@ -1,0 +1,66 @@
+<!--5.HTML code for Attribute Selector and Pseudo Selector-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Share Your Travels</title>
+    <style>
+        /* Attribute selector */
+        [title] {
+            cursor: help;
+            padding-bottom: 3px;
+            border-bottom: 2px dotted blue;
+            text-decoration: none;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            display: inline-block;
+            width: 200px; 
+            height: auto; 
+            margin: 5px; 
+        }
+
+        /* Psuedo selector */
+        a:link {
+                text-decoration: underline;
+                color: blue;
+        }
+            a:visited {
+                text-decoration: underline;
+                color: purple;
+        }
+            a:hover {
+                text-decoration: none;
+                font-weight: bold;
+        }
+            a:active {
+                background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.tD9rYFKeVImGkgAuiewYOQHaDw&pid=Api&P=0&h=180" title="Canada Flag" />
+        <h2><a href="countries.php?id=CA" title="see posts from Canada">Canada</a></h2>
+        <p>Canada is a North American country consisting of . . . </p>
+    </div>
+    <div class="image-container">
+        <img src="sulphur_mountain.png" title="At top of Sulphur Mountain" />
+        <img src="church.png" title="Grace Presbyterian Church" />
+        <img src="calgary.png" title="Calgary Downtown" />
+    </div>
+
+
+    <p>Links are an important part of any web page. To learn more about
+        links visit the <a href="#">W3C</a> website.</p>
+        <nav>
+            <ul>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Germany</a></li>
+            <li><a href="#">United States</a></li>
+            </ul>
+        </nav>
+</body>
+</html>
