@@ -1,0 +1,59 @@
+<!--4: HTML code for inline javaScript using a Conditional Statement, loops, functions and alerts-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Greeting based on the Hour of the Day</h1>
+    <p id="greetingMessage"></p>
+
+    <button onclick="displayWhileLoop()">While Loop</button>
+    <button onclick="displayForLoop()">For Loop</button>
+    <button onclick="showPowerAlert()">Power Function</button>
+
+    <script type="text/javascript">
+        var hourOfDay = new Date().getHours(); 
+        var greeting; 
+
+        if (hourOfDay > 4 && hourOfDay < 12) {
+            greeting = "Good Morning";
+        } else if (hourOfDay >= 12 && hourOfDay < 20) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+        document.getElementById("greetingMessage").innerText = greeting;
+
+        function displayWhileLoop() {
+            var i = 0;
+            var result = "While Loop:\n";
+            while (i < 10) {
+                result += "i = " + i + "\n";
+                i++;
+            }
+            alert(result);
+        }
+
+        function displayForLoop() {
+            var result = "For Loop:\n";
+            for (var i = 0; i < 10; i++) {
+                result += "i = " + i + "\n"; 
+            }
+            alert(result); 
+        }
+
+        function power(x, y) {
+            var pow = 1;
+            for (var i = 0; i < y; i++) {
+                pow = pow * x;
+            }
+            return pow;
+        }
+
+        function showPowerAlert() {
+            var result = power(2, 10);
+            alert("Power Function:\n2^10 = " + result);
+        }
+    </script>
+</body>
+</html>

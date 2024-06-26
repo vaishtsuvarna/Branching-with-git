@@ -1,0 +1,22 @@
+<!--7: HTML code for JavaScript Properties and Methods-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Properties and Methods</title>
+</head>
+<body>
+    <div id="output"></div>
+    <div id="output1"></div>
+    <script>
+        var someObject = { property: "Some value" };
+        document.getElementById("output").innerHTML = someObject.property;
+
+        var someObject = {
+            doSomething: function() {
+                return "Doing something!";
+            }
+        };
+        document.getElementById("output1").innerHTML = someObject.doSomething();
+    </script>
+</body>
+</html>

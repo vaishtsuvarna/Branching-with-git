@@ -1,0 +1,26 @@
+<!--8: HTML code for JavaScript Arrays:-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var output = "";
+        var greetings = new Array("Good Morning", "Good Afternoon");
+
+        for (var i = 0; i < greetings.length; i++) {
+            output += greetings[i] + "<br>";
+        }
+
+        greetings.push("Good Evening");
+        
+        for (var i = 0; i < greetings.length; i++) {
+            output += greetings[i] + "<br>";
+        }
+
+        document.getElementById("output").innerHTML = output;
+    </script>
+</body>
+</html>
